@@ -22,4 +22,27 @@
     <servlet-name>GetMyDB</servlet-name>
     <url-pattern>/GetMyDB</url-pattern>
   </servlet-mapping>
+  <listener>
+    <listener-class>com.abc.SessionListen</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>VistorCount</display-name>
+    <servlet-name>VistorCount</servlet-name>
+    <servlet-class>com.abc.VistorCount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VistorCount</servlet-name>
+    <url-pattern>/VistorCount</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogOut</display-name>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>com.abc.LogOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/LogOut</url-pattern>
+  </servlet-mapping>
 </web-app>
